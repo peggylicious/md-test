@@ -1,6 +1,21 @@
-<form action="" >
+<form [formGroup]="postForm">
     <div class="md-input-form-group">
         <label for="user-name" class="t-12-b md-input-label">Name</label>
         <input type="text" name="" id="user-name" class="md-test-input">
+    </div>
+    <div class="md-input-form-group">
+        <label for="user-name" class="t-12-b md-input-label">User Id</label>
+        <input type="text" name="" id="user-id" class="md-test-input" formControlName="userId">
+    </div>
+    <div class="md-input-form-group">
+        <label for="user-name" class="t-12-b md-input-label">title</label>
+        <input type="text" name="" id="title" class="md-test-input" formControlName="title">
+    </div>
+    <div class="md-input-form-group">
+        <label for="user-name" class="t-12-b md-input-label">Message?Body</label>
+        <input type="text" name="" id="body" class="md-test-input" formControlName="body">
+    </div>
+    <div>
+        <button (click)="submit()">{{'Submit'}}</button>
     </div>
 </form>
