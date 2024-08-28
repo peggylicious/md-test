@@ -1,1 +1,9 @@
-<p>home works!</p>
+<div>
+    <h1>Home</h1>
+    <div class="show-form">
+        <button (click)="showForm()">Show Form</button>
+    </div>
+    <div *ngIf="IS_SHOW_FORM">
+        <post-form></post-form>
+    </div>
+</div>

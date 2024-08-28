@@ -1,3 +1,6 @@
 h1{
     background-color: var(--md-test-primary);
 }
+.md-app-background{
+    background-color: var(--md-test-page-background);
+}

@@ -27,8 +27,11 @@
   --md-test-draft: #373B53;
   --md-test-invoice-total: #373B53;
 
+
+  --md-test-input-border: #DFE3FA;
+
 }
-  
+
   
 .md-test-palette-dark{
 
@@ -47,5 +50,11 @@
     --md-test-danger: #EC5757;
     --md-test-draft: #373B53;
     --md-test-invoice-total: #0C0E16;
+
+
+
+    --md-test-input-border: #252945;
+
+
 
 }

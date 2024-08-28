@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-p, h1, h2{
+p, h1, h2, body{
     margin: 0;
 }
 .text-500{
@@ -80,4 +80,19 @@ p, h1, h2{
     font-weight: 500;
     line-height: 15px; 
     letter-spacing: -0.229px;
+}
+
+.md-test-input{
+    border: 1px solid var(--md-test-input-border);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: var(--md-test-background-light);
+}
+.md-input-form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.md-input-label{
+    color: var(--md-test-label);
 }
