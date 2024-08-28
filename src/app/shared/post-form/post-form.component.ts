@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { PostService } from '../../services/post.service';
 
 @Component({
   selector: 'post-form',
@@ -10,23 +11,26 @@ import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 })
 export class PostFormComponent {
   fb = inject(FormBuilder)
+  postService = inject(PostService)
+
 
   postForm: FormGroup  = this.fb.group({
-    id: [''],
-    userId: [''],
+    id: [1],
+    userId: [],
     title: [''],
     body: ['']
   })
 
   initializeForm(){
     return this.postForm = this.fb.group({
-      id: [''],
-      userId: [''],
+      id: [3],
+      userId: [],
       title: [''],
       body: ['']
     })
   }
   submit(){
     console.log(this.postForm.value)
+    this.postService.onUpdatePost(this.postForm.value)
   }
 }
