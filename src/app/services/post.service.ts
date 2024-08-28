@@ -25,7 +25,7 @@ export class PostService {
   // Sources
   private newPost = new Subject<Post>();
   private updatePost = new Subject<any>();
-  private deletedPost = new Subject<Post>();
+  private deletedPost = new Subject<number>();
 
   // Actions
   private newPost$ = this.newPost.asObservable();
@@ -47,8 +47,9 @@ export class PostService {
     // Add update Post
 
     this.updatePost$.pipe(switchMap(post => this.updatePostRemote(post)), 
-     takeUntilDestroyed()
-  ).subscribe(res=>this.updatePostLocal(res))
+      takeUntilDestroyed()
+    ).subscribe(res=>this.updatePostLocal(res))
+    this.deletedPost$.pipe(switchMap(id => this.deletePostRemote(id)), takeUntilDestroyed()).subscribe(res=>this.deletePost(res))
   }
 
 
@@ -85,6 +86,19 @@ export class PostService {
     console.log('On update post remote, ', post);
     return this.http.put<Post>(`${this.baseUrl}/posts/${post.id}`, post).pipe(catchError(err => this.setError(err, this.postState))) as Observable<Post>;
   }
+
+  private deletePostRemote(id:number): Observable<any>{
+    return this.http.delete<any>(`${this.baseUrl}/posts/${id}`).pipe(catchError(err => this.setError(err, this.postState))) as Observable<any>;
+  }
+
+  // Local Updates
+  private deletePost(id:number){
+    this.postState.update(state => ({
+      ...state,
+      allPosts: state.allPosts.filter(post => post.id !== id)
+    }))
+    console.log(this.postState())
+  }
   
 
   // Action calls
@@ -93,6 +107,9 @@ export class PostService {
   }
   onUpdatePost(post: Post){
     this.updatePost.next(post)
+  }
+  onDeletePost(post:Post){
+    return this.http.delete<Post>(`${this.baseUrl}/posts/${post.id}`, post).pipe(catchError(err => this.setError(err, this.postState))) as Observable<Post>;
   }
 
 
