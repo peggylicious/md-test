@@ -12,7 +12,7 @@ import { PostService } from '../../services/post.service';
 export class PostFormComponent {
   fb = inject(FormBuilder)
   postService = inject(PostService)
-
+  formTitle: string = 'Add Form';
 
   postForm: FormGroup  = this.fb.group({
     id: [1],
