@@ -1,0 +1,20 @@
+<header>
+    <div class="lhs">
+      <img src="assets/logos/logo.svg" alt="logo image" width="72 " height="72">
+      @if (paletteToggle()) {
+        <button fill="clear" name="icon" slot="icon-only" (click)="toggleTheme(false)">
+          <img [ngSrc]="'assets/icon/day.svg'" alt="light theme button image" width="20" height="20" />
+        </button>
+      }@else {
+        <button fill="clear" slot="icon-only" (click)="toggleTheme(true)">
+          <img [ngSrc]="'assets/icon/night.svg'" alt="dark theme button image" width="20" height="20" />
+        </button>
+      }
+    </div>
+    <div class="rhs">
+      <div class="profile-img">
+        <img [ngSrc]="'assets/images/profile.png'" alt="profile image" width="256" height="256"/>
+      </div>
+    </div>
+  </header>
+  

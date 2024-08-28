@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+
+p, h1, h2{
+    margin: 0;
+}
+.text-500{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 125% */
+    letter-spacing: -0.25px;
+}
+.t-24-b{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.5px;
+}
+.t-20-b{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.625px;
+
+}
+.t-16-b{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.8px;
+}
+.t-16-m{
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.8px;
+}
+.t-15-b{
+    font-size: 0.938rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 150% */
+    letter-spacing: -0.312px;
+}
+.t-15-m{
+    font-size: 0.938rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 150% */
+    letter-spacing: -0.312px;
+}
+.t-12-b{
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; /* 125% */
+    letter-spacing: -0.25px;
+}
+.t-12-m{
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; /* 125% */
+    letter-spacing: -0.25px;
+}
+.t-11-b{
+    font-size: 0.688rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.229px;
+}
+.t-11-m{
+    font-size: 0.688rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px; 
+    letter-spacing: -0.229px;
+}

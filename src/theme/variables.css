@@ -1,0 +1,51 @@
+
+@font-face {
+  font-family: "spartan";
+  src: url("../assets/fonts/League_Spartan/static/LeagueSpartan-Regular.ttf")
+}
+*{
+  font-family: spartan;
+}
+:root {
+
+  --md-test-primary: #7C5DFA;
+  --md-test-main-color: #0C0E16;
+
+  --md-test-extra-light-color: #858BB2;
+
+  --md-test-extra-extra-light-color: #7E88C3;
+
+  --md-test-label: #7E88C3;
+  --md-test-page-background: #F8F8FB;
+  --md-test-background-light: #fff;
+  --md-test-background-light-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
+  --md-test-header-background: #373B53;
+  --md-test-v-rule: #494E6E;
+  --md-test-status-draft-color: #373B53;
+  --md-test-secondary: #F9FAFE;
+  --md-test-danger: #EC5757;
+  --md-test-draft: #373B53;
+  --md-test-invoice-total: #373B53;
+
+}
+  
+  
+.md-test-palette-dark{
+
+    --md-test-primary: #7C5DFA;
+    --md-test-main-color: #fff;
+    --md-test-extra-light-color: #fff;
+    --md-test-extra-extra-light-color: #DFE3FA;
+    --md-test-label: #888EB0;
+    --md-test-page-background: #141625;
+    --md-test-background-light: #1E2139;
+    --md-test-background-light-shadow: 0px 10px 10px -10px rgba(72, 84, 159, 0.10);
+    --md-test-header-background: #1E2139;
+    --md-test-v-rule: #494E6E;
+    --md-test-status-draft-color: #DFE3FA;
+    --md-test-secondary: #252945;
+    --md-test-danger: #EC5757;
+    --md-test-draft: #373B53;
+    --md-test-invoice-total: #0C0E16;
+
+}
