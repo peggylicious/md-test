@@ -1,0 +1,21 @@
+h1, p{
+    margin: 0;
+    text-align: center;
+}
+h1{
+    margin-bottom: 24px;
+    color: var(--md-test-main-color);
+}
+p{
+    color: var(--md-test-main-color);
+}
+.page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+}
+.descriptive-image{
+    display: flex;
+    justify-content: center;
+}
