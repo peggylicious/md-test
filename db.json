@@ -1,16 +1,3 @@
 {
-  "posts": [
-    {
-      "id": "1",
-      "userId": 1,
-      "title": "12",
-      "body": "ghdfhmjdf,"
-    },
-    {
-      "id": "2",
-      "userId": 23,
-      "title": "bnwesdnm",
-      "body": "rhf,d"
-    }
-  ]
+  "posts": []
 }
