@@ -1,0 +1,15 @@
+<div class="post-wrapper">
+    <div class="post-card-wrapper">
+        <p class="post-user-id t-12-b"><span>#</span>USR{{post().userId}}</p>
+        <div class="icons-wrapper t-12-m">
+            <button fill="clear" name="edit button" slot="icon-only" (click)="editPost(post())">
+                <img [ngSrc]="'assets/icon/edit.svg'" alt="edit button" width="15" height="15" />
+            </button>
+            <button fill="clear" name="delete button" slot="icon-only" (click)="deletePost(post())">
+                <img [ngSrc]="'assets/icon/delete.svg'" alt="delete button" width="10" height="13" />
+            </button>
+        </div>
+        <p class="post-title t-18-b">{{post().title}}</p>
+        <p class="post-body t-14-m">{{post().body}}</p>
+      </div>
+</div>

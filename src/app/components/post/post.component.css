@@ -1,0 +1,41 @@
+p{
+    margin: 0;
+}
+.post-card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--md-test-background-light);
+    box-shadow: var(--md-test-background-light-shadow);
+    border-radius: 8px;
+    padding: 24px 24px 28px 24px;
+}
+.post-user-id, .icons-wrapper, .post-title{
+    width: 50%;
+}
+.post-user-id{
+    margin-bottom: 28px;
+    color: var(--md-test-main-color);
+}
+.post-user-id span{
+    color: #7E88C3;
+}
+.icons-wrapper{
+    display: inline-flex;
+    color: var(--md-test-extra-light-color);
+    text-align: right;
+    gap: 24px;
+    width: fit-content;
+    margin-left: auto;
+}
+.icons-wrapper button{
+    padding: 0;
+    background-color: transparent;
+}
+.post-body{
+    width: 100%;
+    margin-bottom: 8px;
+    color: var(--md-test-extra-extra-light-color);
+}
+.post-title{
+    color: var(--md-test-main-color);
+}
