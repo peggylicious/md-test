@@ -4,9 +4,9 @@ This project runs on version 17.3.7. and is backed by a JSON server
 
 ## Json Server
 - Navigate to the root component
-- Run ==npm install== from the root folder
-- Install Json server globally by running ==npm install -g json-server== 
-- Serve the json file ==db.json== by running ==json-server --watch db.json==
+- Run `npm install` from the root folder
+- Install Json server globally by running `npm install -g json-server`
+- Serve the json file db.json by running `json-server --watch db.json`
 
 ## Development server
 
