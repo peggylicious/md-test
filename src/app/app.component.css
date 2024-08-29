@@ -4,3 +4,6 @@ h1{
 .md-app-background{
     background-color: var(--md-test-page-background);
 }
+.all-outlets{
+    padding: 20px;
+}

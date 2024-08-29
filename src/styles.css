@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: var(--md-test-page-background);
+}
 button{
     border: none;
     box-shadow: none;
@@ -29,6 +32,21 @@ button{
 }
 .t-20-b{
     font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.625px;
+
+}
+.t-18-b{
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.5px;
+}
+.t-18-m{
+    font-size: 1.125rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -97,6 +115,10 @@ button{
     padding: 0.5rem 1rem;
     border-radius: 4px;
     background-color: var(--md-test-background-light);
+    color: var(--md-test-main-color);
+}
+.md-test-input:focus{
+    outline: 1px solid var(--md-test-label);
 }
 .md-input-form-group{
     display: flex;
@@ -105,4 +127,18 @@ button{
 }
 .md-input-label{
     color: var(--md-test-label);
+    text-transform: capitalize;
 }
+/* input[type=number]::-webkit-inner-spin-button {
+    width: 30px;
+    height: 30px; 
+    background-color: red;
+    color: #fff;
+} */
+ .md-btn-group{
+    display: flex;
+    justify-content: center;
+ }
+ button{
+    cursor: pointer;
+ }

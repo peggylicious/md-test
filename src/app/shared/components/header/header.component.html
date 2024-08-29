@@ -2,11 +2,11 @@
     <div class="lhs">
       <img src="assets/logos/logo.svg" alt="logo image" width="72 " height="72">
       @if (paletteToggle()) {
-        <button fill="clear" name="icon" slot="icon-only" (click)="toggleTheme(false)">
+        <button fill="clear" name="icon" (click)="toggleTheme(false)">
           <img [ngSrc]="'assets/icon/day.svg'" alt="light theme button image" width="20" height="20" />
         </button>
       }@else {
-        <button fill="clear" slot="icon-only" (click)="toggleTheme(true)">
+        <button fill="clear" (click)="toggleTheme(true)">
           <img [ngSrc]="'assets/icon/night.svg'" alt="dark theme button image" width="20" height="20" />
         </button>
       }
