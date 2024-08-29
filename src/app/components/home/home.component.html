@@ -1,9 +1,13 @@
-<div>
-    <h1>Home</h1>
-    <div class="show-form">
-        <button (click)="showForm()">Show Form</button>
+<div class="page-container">
+    <div class="btn-grp">
+        <button (click)="addPost()">Add Post</button>
     </div>
-    <div *ngIf="IS_SHOW_FORM">
-        <post-form></post-form>
+    <div class="post-list">
+        @if(postService.allPosts().length < 1){
+            <app-empty-post-list></app-empty-post-list>
+        }
+        @for (post of postService.allPosts(); track $index) {
+            <post [post]="post" (onEditPost)="editPost($event)" (onDeletePost)="deletePost($event)"></post>
+        }
     </div>
 </div>

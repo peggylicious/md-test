@@ -1,0 +1,26 @@
+<h1>{{title()}} Post</h1>
+
+<form [formGroup]="postForm">
+    <!-- <div class="md-input-form-group">
+        <label for="user-name" class="t-12-b md-input-label">id</label>
+        <input type="text" name="" id="user-name" class="md-test-input" formControlName="id">
+    </div> -->
+    <div class="md-input-form-group">
+        <label for="user-name" class="t-12-b md-input-label">User Id</label>
+        <input type="number" name="" id="user-id" class="md-test-input" formControlName="userId">
+        <span class="t-12-b" *ngIf="postForm.get('userId')?.hasError('required') && postForm.get('userId')?.touched">This field is required</span>
+    </div>
+    <div class="md-input-form-group">
+        <label for="user-name" class="t-12-b md-input-label">title</label>
+        <input type="text" name="" id="title" class="md-test-input" formControlName="title">
+        <span class="t-12-b" *ngIf="postForm.get('title')?.hasError('required') && postForm.get('title')?.touched">This field is required</span>
+    </div>
+    <div class="md-input-form-group">
+        <label for="user-name" class="t-12-b md-input-label">Message / Body</label>
+        <textarea type="text" name="" id="body" rows="6" class="md-test-input" formControlName="body"></textarea>
+        <span class="t-12-b" *ngIf="postForm.get('body')?.hasError('required') && postForm.get('body')?.touched">This field is required</span>
+    </div>
+    <div class="md-btn-group">
+        <button [ngClass]="{'submit-btn-disabled': !postForm.valid, 'submit-btn': postForm.valid}" (click)="submit()" [disabled]="!postForm.valid">{{'Submit'}}</button>
+    </div>
+</form>
